@@ -31,4 +31,8 @@ app.get(
 
 app.use("/api/rooms", roomRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Backend Running");
+});
+
 export default app;
